@@ -1,32 +1,49 @@
 import Image from "next/image";
 import DropDownMenu from "./../utils/DropDownMenu";
 import { HiOutlineSearch } from "react-icons/hi";
-import ProductBar from "../productBar/ProductBar";
+import ImageLayOut from "../layout/ImageLayOut";
 export default function Heading(props) {
   return (
     <div className="mt-5 relative h-[700px] bg-white bg-opacity-90  mx-auto">
+      <ImageLayOut />
       <div className="relative -z-20">
         <Image
-          className="mt-6 opacity-30 absolute -z-20"
+          className="mt-6 opacity-60 absolute -z-20"
           src="/HeaderIcon/circle.svg"
-          width={1920}
-          height={1080}
+          width={1400}
+          height={900}
           alt="circle"
         />
       </div>
 
-      <div className="absolute text-center z-30 bg-inherit    top-24 left-[50%] -translate-x-[50%] ml-auto">
+      <div className="absolute text-center z-30 bg-transparent drop-shadow-2xl    top-24 left-[50%] -translate-x-[50%] ml-auto">
         <p className="uppercase tracking-[.2em] text-gray-500 text-xs">
           non fungible tokens
         </p>
-        <div className="heading font-headers text-gray-800  font-semibold text-8xl mt-4">
-          <h1 className="mr-10  ">A new NFT</h1>
-          <h1 className="ml-10">Experience</h1>
+        <div className="heading font-headers  text-gray-800 w-full  font-semibold text-8xl mt-4">
+          <div className="flex mr-8">
+            <h1 className="mr-3">A new NFT</h1>
+            <Image
+              src="/HeaderIcon/Vector.svg"
+              width={30}
+              height={40}
+              alt="tag"
+            />
+          </div>
+          <div className="flex ml-10">
+            <Image
+              src="/HeaderIcon/Frame.svg"
+              width={60}
+              height={80}
+              alt="tag"
+            />
+            <h1 className="ml-3">Experience</h1>
+          </div>
         </div>
         <p className="uppercase  pt-8 tracking-[.2em] text-gray-500 ">
           Discover, collect and Sell
         </p>
-        <div className="shadow-lg bg-white mt-20 py-5 items-center flex rounded-md">
+        <div className="shadow-lg bg-white mt-20 py-5 max-w-xl items-center flex rounded-md">
           <input
             type="text"
             placeholder="Items, Collections and Creators"
