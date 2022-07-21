@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ImageLayOut() {
   return (
-    <div className="w-full absolute z-10 h-[100vh] grid grid-cols-12 grid-rows-6">
+    <div className="w-full hidden  absolute z-10 h-[100vh] lg:grid grid-cols-12 grid-rows-6">
       <div className="col-start-1 drop-shadow-[0_35px_35px_rgba(77,44,16,0.5)] rounded-md col-end-3 row-start-2 row-end-3 ml-10">
         <Image
           objectFit="cover"
