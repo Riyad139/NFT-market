@@ -36,7 +36,7 @@ export default function ImageLayOut() {
         />
         <p className="text-xs ml-3 text-[#7780a1]">2.5 ETH</p>
       </div>
-      <div className="col-start-12  drop-shadow-[0_35px_35px_rgba(244,194,163,0.5)] ml-10 rounded-md col-end-12 row-start-3 row-end-4 ">
+      <div className="col-start-12  drop-shadow-[0_35px_35px_rgba(244,194,163,0.5)] -right-20 relative rounded-md col-end-12 row-start-3 row-end-4 ">
         <Image
           objectFit="cover"
           className="rounded-2xl "
