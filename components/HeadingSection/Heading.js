@@ -20,8 +20,8 @@ export default function Heading(props) {
         <p className="uppercase tracking-[.2em] text-gray-500 text-xs">
           non fungible tokens
         </p>
-        <div className="heading font-headers  text-gray-800 w-full  font-semibold text-8xl mt-4">
-          <div className="flex mr-8">
+        <div className="heading font-headers  text-gray-800 w-full  font-semibold md:text-8xl text-5xl mt-4">
+          <div className="flex justify-center">
             <h1 className="mr-3">A new NFT</h1>
             <Image
               src="/HeaderIcon/Vector.svg"
@@ -34,7 +34,7 @@ export default function Heading(props) {
             <Image
               src="/HeaderIcon/Frame.svg"
               width={60}
-              height={80}
+              height={60}
               alt="tag"
             />
             <h1 className="ml-3">Experience</h1>

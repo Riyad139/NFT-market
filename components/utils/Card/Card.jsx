@@ -11,7 +11,7 @@ const data = [
 
 export default function Card(props) {
   return (
-    <div className="rounded-xl p-5 border border-[#e2e2ed] w-[320px]">
+    <div className="rounded-xl p-5 border border-[#e2e2ed] w-[100%]">
       <div className="img w-full shadow-2xl rounded-xl flex  aspect-w-10 aspect-h-13 ">
         <Image
           src={props.nft}
