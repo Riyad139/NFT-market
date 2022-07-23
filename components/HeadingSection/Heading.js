@@ -4,7 +4,7 @@ import { HiOutlineSearch } from "react-icons/hi";
 import ImageLayOut from "../layout/ImageLayOut";
 export default function Heading(props) {
   return (
-    <div className="mt-5 relative h-[700px] bg-white bg-opacity-90  mx-auto">
+    <div className="mt-5 relative  bg-white bg-opacity-90  mx-auto">
       <ImageLayOut />
       <div className="relative -z-20">
         <Image

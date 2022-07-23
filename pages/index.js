@@ -1,4 +1,5 @@
 import Auctions from "../components/Auctions/Auctions";
+import CardSections from "../components/CardSections/CardSections";
 import Heading from "../components/HeadingSection/Heading";
 import Container from "../components/layout/Container";
 import ColorSection from "../components/MidSection/ColorSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <Heading />
       <Auctions />
       <ColorSection />
+      <CardSections />
     </Container>
   );
 }
