@@ -11,6 +11,13 @@ module.exports = {
         body: `'Inter', sans-serif`,
       },
     },
+    clipPath: {
+      myCard:
+        "polygon(0 0, 33% 0, 38% 2%, 100% 2%, 100% 100%, 0 100%, 0% 70%, 0% 30%)",
+    },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("tailwind-clip-path"),
+  ],
 };
