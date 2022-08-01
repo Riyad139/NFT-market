@@ -6,7 +6,7 @@ import ContentLayout from "../layout/ContentLayout";
 export default function BottomSection(params) {
   return (
     <ContentLayout>
-      <div className="flex w-full text-[#7780a1] border-b  space-x-24 py-40">
+      <div className="flex md:flex-row flex-col w-full text-[#7780a1] border-b  md:space-x-24 py-40">
         <div className="w-full">
           <img src="/NftImage/left.png" alt="dwda" />
         </div>

@@ -14,6 +14,7 @@ module.exports = {
     clipPath: {
       myCard:
         "polygon(0 0, 33% 0, 38% 2%, 100% 2%, 100% 100%, 0 100%, 0% 70%, 0% 30%)",
+      fancyCard: " polygon(19% 0, 22% 9%, 100% 9%, 100% 100%, 0 100%, 0 0)",
     },
   },
   plugins: [

@@ -1,9 +1,9 @@
 export default function ClipShapeCard(params) {
   return (
-    <div className="min-w-[330px] relative -top-1  py-12 px-5 clip-path-myCard bg-[#191925] border rounded-2xl  max-w-[29%]">
+    <div className="min-w-[330px]   -top-1  py-12 px-5 clip-path-myCard bg-[#191925] border rounded-2xl  max-w-[29%]">
       <img className="w-8 -mt-8 -ml-2" src="/ClipCard/Three.png" />
       <div className="w-[120%] ">
-        <img className="-ml-7 -mt-16" src="/ClipCard/Image.png" />
+        <img className="-ml-7 relative -mt-16" src="/ClipCard/Image.png" />
       </div>
       <div className="text-white pr-9 pb-6">
         <h3 className="font-bold text-lg">
