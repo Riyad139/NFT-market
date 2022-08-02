@@ -2,6 +2,8 @@ import Image from "next/image";
 import Button from "../Buttons/Button";
 import ButtonFill from "../Buttons/ButtonFill";
 import ContentLayout from "../layout/ContentLayout";
+import PicSection from "./PicSection";
+import Profile from "./Profile";
 
 export default function UserProfileSection(props) {
   return (
@@ -29,9 +31,9 @@ export default function UserProfileSection(props) {
         </div>
       </div>
 
-      <div className="clip-path-fancyCard relative flex rounded-xl bg-[#f2f1f6]">
+      <div className="lg:clip-path-fancyCard flex-col lg:flex-row relative flex rounded-xl bg-[#f2f1f6]">
         <img className="w-8 absolute top-4 left-5 " src="/ClipCard/Three.png" />
-        <div className="py-16 pt-32 space-y-5 px-24">
+        <div className="lg:py-16 pt-32 lg:w-[50%] w-full  space-y-5 px-5 lg:px-24">
           <p className="uppercase text-sm text-[#7780a1] ">Overline</p>
           <h2 className="text-4xl font-bold font-headers">
             Cursus vitae sollicitudin donec nascetur. Join now
@@ -45,16 +47,27 @@ export default function UserProfileSection(props) {
             <Button name="Learb more" />
           </div>
         </div>
-        <div className="py-16 px-28">
-          <p className="uppercase">Overline</p>
-          <h2 className="text-3xl">
-            Cursus vitae sollicitudin donec nascetur. Join now
-          </h2>
-          <p>
-            Donec volutpat bibendum justo, odio aenean congue est porttitor ut.
-            Mauris vestibulum eros libero amet tincidunt.
-          </p>
+        <div className="grid grid-cols-2 lg:w-[50%] relative md:overflow-hidden lg:overflow-visible  grid-rows-2 ">
+          <div className="h-full w-[60%] bg-[#f2f1f6] opacity-40 z-40 absolute right-0  "></div>
+          <div className="col-start-1  -mt-24 mr-9 col-end-3 row-start-2 row-end-2">
+            <Profile />
+          </div>
+          <div className="col-start-3 -mr-32 mt-28 col-end-4 row-start-1 row-end-2">
+            <Profile />
+          </div>
+          <div className="col-start-2 mr-9 -ml-9 mt-3 col-end-4 row-start-2 row-end-3">
+            <Profile />
+          </div>
+          <div className="col-start-1  mt-28 col-end-3 lg:-ml-14 mr-16 row-start-3 row-end-2">
+            <Profile />
+          </div>
         </div>
+      </div>
+      {/* section image */}
+      <div className="mt-44 hidden space-x-5 w-[120%] -ml-[10%]  lg:visible lg:flex mb-10">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((item) => (
+          <PicSection key={item} />
+        ))}
       </div>
     </ContentLayout>
   );
