@@ -1,6 +1,7 @@
 import Auctions from "../components/Auctions/Auctions";
 import BottomSection from "../components/BottomSection/BottomSection";
 import CardSections from "../components/CardSections/CardSections";
+import Footer from "../components/Footer/Footer";
 import Heading from "../components/HeadingSection/Heading";
 import Container from "../components/layout/Container";
 import ColorSection from "../components/MidSection/ColorSection";
@@ -17,8 +18,9 @@ export default function Home() {
       <ColorSection />
       <CardSections />
       <BottomSection />
-      <PopularAuction/>
-      <UserProfileSection/>
+      <PopularAuction />
+      <UserProfileSection />
+      <Footer />
     </Container>
   );
 }

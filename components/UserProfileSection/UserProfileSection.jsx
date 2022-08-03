@@ -31,7 +31,7 @@ export default function UserProfileSection(props) {
         </div>
       </div>
 
-      <div className="lg:clip-path-fancyCard flex-col lg:flex-row relative flex rounded-xl bg-[#f2f1f6]">
+      <div className="lg:clip-path-fancyCard flex-col py-9 lg:flex-row relative flex rounded-xl bg-[#f2f1f6]">
         <img className="w-8 absolute top-4 left-5 " src="/ClipCard/Three.png" />
         <div className="lg:py-16 pt-32 lg:w-[50%] w-full  space-y-5 px-5 lg:px-24">
           <p className="uppercase text-sm text-[#7780a1] ">Overline</p>
@@ -66,7 +66,7 @@ export default function UserProfileSection(props) {
       {/* section image */}
       <div className="mt-44 hidden space-x-5 w-[120%] -ml-[10%]  lg:visible lg:flex mb-10">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((item) => (
-          <PicSection key={item} />
+          <PicSection key={"Robin-" + item} />
         ))}
       </div>
     </ContentLayout>

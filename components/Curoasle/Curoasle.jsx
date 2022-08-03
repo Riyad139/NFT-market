@@ -43,19 +43,20 @@ export default function Curoasle(params) {
   return (
     <>
       <Swiper
-        slidesPerView={5}
+        id="swiperBin"
+        slidesPerView={"auto"}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        breakpoints={data}
+         breakpoints={data}
         loop={true}
         loopFillGroupWithBlank={true}
-        modules={[Pagination, Navigation]}
+        modules={[ Navigation]}
         className="mySwiper flex justify-center"
       >
         {card.map((item, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={"card-" + i}>
             <Card nft={item} />
           </SwiperSlide>
         ))}
