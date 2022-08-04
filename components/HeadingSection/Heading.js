@@ -40,7 +40,7 @@ export default function Heading(props) {
         <p className="uppercase text-xs  md:text-base pt-8 md:tracking-[.2em] text-gray-500 ">
           Discover, collect and Sell
         </p>
-        <div className="shadow-lg bg-white mt-20 py-3 md:py-5 w-96  md:w-[576px] items-center flex rounded-md">
+        <div className="shadow-lg bg-white mt-20 py-3 md:py-5 w-80  md:w-[576px] items-center flex rounded-md">
           <input
             type="text"
             placeholder="Items, Collections and Creators"

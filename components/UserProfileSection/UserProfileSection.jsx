@@ -47,18 +47,18 @@ export default function UserProfileSection(props) {
             <Button name="Learb more" />
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:w-[50%] relative  overflow-hidden lg:overflow-visible  grid-rows-2 ">
+        <div className="grid grid-cols-2 mt-5 md:mt-0 lg:w-[50%] relative gap-y-4  overflow-hidden lg:overflow-visible grid-rows-4 lg:grid-rows-2 ">
           <div className="h-full w-[60%] hidden lg:table  bg-[#f2f1f6] opacity-40 z-40 absolute right-0  "></div>
-          <div className="col-start-1  -mt-24 mr-9 col-end-3 row-start-2 row-end-2">
+          <div className="col-start-1   lg:-mt-24 lg:mr-9 col-end-2 lg:col-end-3 row-start-2 row-end-2">
             <Profile />
           </div>
-          <div className="col-start-3 -mr-32 mt-28 col-end-4 row-start-1 row-end-2">
+          <div className="col-start-3 lg:-mr-32 lg:mt-28 col-end-4 row-start-1 row-end-2">
             <Profile />
           </div>
-          <div className="col-start-2 mr-9 -ml-9 mt-3 col-end-4 row-start-2 row-end-3">
+          <div className="col-start-2 lg:mr-9 lg:-ml-9 row-start-3 row-end-4 lg:mt-3 col-end-3 lg:col-end-4 lg:row-start-2 lg:row-end-3">
             <Profile />
           </div>
-          <div className="col-start-1  mt-28 col-end-3 lg:-ml-14 mr-16 row-start-3 row-end-2">
+          <div className="lg:col-start-1 col-start-3 col-end-4  lg:mt-28 lg:col-end-3 lg:-ml-14 lg:mr-16 lg:row-start-2 lg:row-end-3 row-start-4 row-end-5">
             <Profile />
           </div>
         </div>
