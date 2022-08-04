@@ -19,7 +19,7 @@ export default function PopularAuction(params) {
         <p className="uppercase mb-2 text-[#7780a1] tracking-wider text-xs">
           Overline
         </p>
-        <h2 className="text-3xl mb-8 font-headers font-semibold">
+        <h2 className="text-3xl text-center mb-8 font-headers font-semibold">
           Most popular live auctions
         </h2>
         <div className="flex mb-12 space-x-5">

@@ -2,7 +2,7 @@ import { RiGalleryLine } from "react-icons/ri";
 import { BsGrid } from "react-icons/bs";
 export default function Profile(params) {
   return (
-    <div className="flex border border-[#e2e2ed] shadow-sm rounded-3xl py-3 px-5 space-x-1 w-full">
+    <div className="flex lg:flex-row flex-col space-y-2 min-w-[240px] max-w-[260px] lg:space-y-0 items-center border border-[#e2e2ed] shadow-sm rounded-3xl py-3 px-5 space-x-1 lg:max-w-none lg:w-full">
       <div className="w-14 rounded-full drop-shadow-lg">
         <img
           className="w-9 h-9  rounded-full object-cover"

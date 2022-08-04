@@ -10,6 +10,11 @@ module.exports = {
         headers: `'Sora', sans-serif`,
         body: `'Inter', sans-serif`,
       },
+      screens: {
+        xm: "550px",
+        xl: "1200px",
+        xll: "1400px",
+      },
     },
     clipPath: {
       myCard:

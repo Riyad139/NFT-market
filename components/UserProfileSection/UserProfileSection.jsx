@@ -8,7 +8,7 @@ import Profile from "./Profile";
 export default function UserProfileSection(props) {
   return (
     <ContentLayout>
-      <div className="py-28 flex justify-around px-16 text-4xl font-headers font-semibold">
+      <div className="py-28 flex justify-around px-4 md:px-16 text-2xl xm:text-3xl md:text-4xl font-headers font-semibold">
         <div className="flex  flex-col items-center">
           <Image src="/UserIcons/Untitled.svg" width={25} height={25} alt="" />
           <h3 className="mt-5 mb-2">300k</h3>
@@ -47,8 +47,8 @@ export default function UserProfileSection(props) {
             <Button name="Learb more" />
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:w-[50%] relative md:overflow-hidden lg:overflow-visible  grid-rows-2 ">
-          <div className="h-full w-[60%] bg-[#f2f1f6] opacity-40 z-40 absolute right-0  "></div>
+        <div className="grid grid-cols-2 lg:w-[50%] relative  overflow-hidden lg:overflow-visible  grid-rows-2 ">
+          <div className="h-full w-[60%] hidden lg:table  bg-[#f2f1f6] opacity-40 z-40 absolute right-0  "></div>
           <div className="col-start-1  -mt-24 mr-9 col-end-3 row-start-2 row-end-2">
             <Profile />
           </div>

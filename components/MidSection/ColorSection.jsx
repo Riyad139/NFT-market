@@ -21,14 +21,14 @@ export default function ColorSection(props) {
             <Button name="Learn more" />
           </div>
         </div>
-        <div className=" w-[100%] ">
+        <div className=" w-[100%] mt-16 md:mt-0 flex justify-center ">
           <img
-            className="w-[226px] mt-20  -mr-16 inline-block  "
+            className=" w-[186px] shrink-0 lg:w-[226px] mt-20  -mr-16 inline-block  "
             src="/ColorSection/Image.png"
             alt=""
           />
           <img
-            className="w-[284px] -mt-14 inline-block"
+            className=" w-[190px] shrink-0 lg:w-[284px] -mt-14 inline-block"
             src="/ColorSection/dice.png"
             alt=""
           />

@@ -25,17 +25,21 @@ export default function Curoasle(params) {
       slidesPerView: 1,
     },
     // when window width is >= 680px
-    770: {
+    550: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
 
-    900: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
     // when window width is >= 640px
     1000: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1200: {
       slidesPerView: 5,
       spaceBetween: 30,
     },
@@ -49,10 +53,10 @@ export default function Curoasle(params) {
         pagination={{
           clickable: true,
         }}
-         breakpoints={data}
+        breakpoints={data}
         loop={true}
         loopFillGroupWithBlank={true}
-        modules={[ Navigation]}
+        modules={[Navigation]}
         className="mySwiper flex justify-center"
       >
         {card.map((item, i) => (

@@ -9,7 +9,7 @@ export default function Auctions(params) {
         Latest live auctions
       </h4>
       <div
-        className="md:w-[120%] w-[80%] mx-auto
+        className=" w-[80%] xm:w-[120%]   mx-auto
        lg:-translate-x-36"
       >
         <Curoasle />
