@@ -3,12 +3,7 @@ import { FaRegClock } from "react-icons/fa";
 import { AiOutlineHeart } from "react-icons/ai";
 import cl from "classnames";
 
-const data = [
-  "/RatingDummyImage/rating1.jpg",
-  "/RatingDummyImage/rating1.jpg",
-  "/RatingDummyImage/rating1.jpg",
-  "/RatingDummyImage/rating1.jpg",
-];
+const data = [1, 2, 3, 4];
 
 export default function Card(props) {
   return (
@@ -63,11 +58,11 @@ export default function Card(props) {
       <div className="ratings text-xs text-[#7780a1] flex justify-between items-center pt-4 border-t border-[] mt-7">
         {!props.isCardSection && (
           <div className="img flex">
-            {data.map((link, i) => (
+            {data.map((i) => (
               <img
                 key={i}
                 className=" w-[35px] first:-ml-2 h-[35px] object-cover border-[5px] -ml-4 p-[0.5px] border-white rounded-full"
-                src={link}
+                src={`/user/User${Math.ceil(Math.random() * 9) + 1}.jpg`}
                 alt="rat"
               />
             ))}

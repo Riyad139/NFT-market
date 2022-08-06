@@ -10,12 +10,12 @@ export default function PicSection(props) {
       /> */}
       <Image
         className="rounded-xl"
-        src={"/FloatingImage/img1.jpg"}
+        src={props.pic}
         width={80}
         height={80}
         alt=""
       />
-      <p className="text-xs text-[#7780a1]">3.78ETH</p>
+      <p className="text-xs text-[#7780a1]">{props.rating}ETH</p>
     </div>
   );
 }

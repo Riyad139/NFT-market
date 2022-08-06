@@ -1,10 +1,10 @@
 import Box from "../Box/Box";
 
 const img = [
-  "/Carosel/Caros-6.jpeg",
-  "/Carosel/Caros-7.jpeg",
-  "/Carosel/Caros-8.jpeg",
-  "/Carosel/Caros-9.jpeg",
+  "/CardBox/CardBox1.jpg",
+  "/CardBox/CardBox2.jpg",
+  "/CardBox/CardBox3.jpg",
+  "/CardBox/CardBox4.jpg",
 ];
 
 export default function CardBox(props) {

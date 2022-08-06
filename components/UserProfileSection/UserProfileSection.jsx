@@ -1,9 +1,13 @@
 import Image from "next/image";
+import { useEffect } from "react";
 import Button from "../Buttons/Button";
 import ButtonFill from "../Buttons/ButtonFill";
 import ContentLayout from "../layout/ContentLayout";
 import PicSection from "./PicSection";
 import Profile from "./Profile";
+
+let rating = [0, 1];
+rating = rating.fill(0, 0, 17);
 
 export default function UserProfileSection(props) {
   return (
@@ -53,20 +57,24 @@ export default function UserProfileSection(props) {
             <Profile />
           </div>
           <div className="col-start-3 lg:-mr-32 lg:mt-28 col-end-4 row-start-1 row-end-2">
-            <Profile />
+            <Profile name="@yo_waker" pic="user/User2.jpg" />
           </div>
           <div className="col-start-2 lg:mr-9 lg:-ml-9 row-start-3 row-end-4 lg:mt-3 col-end-3 lg:col-end-4 lg:row-start-2 lg:row-end-3">
-            <Profile />
+            <Profile name="@robi_in" pic="user/User3.jpg" />
           </div>
           <div className="lg:col-start-1 col-start-3 col-end-4  lg:mt-28 lg:col-end-3 lg:-ml-14 lg:mr-16 lg:row-start-2 lg:row-end-3 row-start-4 row-end-5">
-            <Profile />
+            <Profile name="@im_ok" pic="user/User4.jpg" />
           </div>
         </div>
       </div>
       {/* section image */}
       <div className="mt-44 hidden space-x-5 w-[120%] -ml-[10%]  lg:visible lg:flex mb-10">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((item) => (
-          <PicSection key={"Robin-" + item} />
+          <PicSection
+            key={"Robin-" + item}
+            rating={((item / 17) * 10).toPrecision(2)}
+            pic={`/NftsIcon/Nft${item}.jpg`}
+          />
         ))}
       </div>
     </ContentLayout>

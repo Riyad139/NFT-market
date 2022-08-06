@@ -7,15 +7,12 @@ import { Pagination, Navigation } from "swiper";
 import Card from "../utils/Card/Card";
 
 const card = [
-  "/Carosel/Caros-1.jpeg",
-  "/Carosel/Caros-2.jpeg",
-  "/Carosel/Caros-3.jpeg",
-  "/Carosel/Caros-4.jpeg",
-  "/Carosel/Caros-5.jpeg",
-  "/Carosel/Caros-6.jpeg",
-  "/Carosel/Caros-7.jpeg",
-  "/Carosel/Caros-8.jpeg",
-  "/Carosel/Caros-9.jpeg",
+  "/CardCarosel/CardCaros1.jpg",
+  "/CardCarosel/CardCaros2.jpg",
+  "/CardCarosel/CardCaros3.jpg",
+  "/CardCarosel/CardCaros4.jpg",
+  "/CardCarosel/CardCaros5.jpg",
+  "/CardCarosel/CardCaros6.jpg",
 ];
 
 export default function Carosel(params) {

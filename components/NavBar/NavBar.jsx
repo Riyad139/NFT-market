@@ -9,12 +9,14 @@ export default function NavBar(props) {
   const [isOpen, setOpen] = useState(false);
   return (
     <nav className="w-full py-5 px-9 justify-between items-center flex">
-      <div className="space-x-2 flex items-center">
-        <Image src="/HeaderIcon/Sygnet.svg" alt="" width={22} height={22} />
-        <strong className="font-headers text-xl tracking-wide">
-          NFT Market
-        </strong>
-      </div>
+      <Link href="/">
+        <div className="space-x-2 cursor-pointer flex items-center">
+          <Image src="/HeaderIcon/Sygnet.svg" alt="" width={22} height={22} />
+          <strong className="font-headers text-xl tracking-wide">
+            NFT Market
+          </strong>
+        </div>
+      </Link>
       <div className=" lg:hidden">
         <div
           className={classNames(

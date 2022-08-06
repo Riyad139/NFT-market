@@ -4,12 +4,12 @@ import ContentLayout from "../layout/ContentLayout";
 import Card from "../utils/Card/Card";
 
 const data = [
-  "/Carosel/Caros-1.jpeg",
-  "/Carosel/Caros-2.jpeg",
-  "/Carosel/Caros-3.jpeg",
-  "/Carosel/Caros-4.jpeg",
-  "/Carosel/Caros-5.jpeg",
-  "/Carosel/Caros-6.jpeg",
+  "/PopularSection/PopularCard1.jpg",
+  "/PopularSection/PopularCard2.jpg",
+  "/PopularSection/PopularCard3.jpg",
+  "/PopularSection/PopularCard4.jpg",
+  "/PopularSection/PopularCard5.jpg",
+  "/PopularSection/PopularCard6.jpg",
 ];
 
 export default function PopularAuction(props) {
@@ -32,7 +32,7 @@ export default function PopularAuction(props) {
         )}
         <div className="flex mb-14 md:flex-row flex-col items-center space-y-9 md:space-y-0 md:space-x-5">
           {data.map((item, i) => (
-            <Card nft={item} key={i} isCardSection={true} />
+            <Card nft={item} key={"popular"+i} isCardSection={true} />
           ))}
         </div>
         <Button name="Show me more" />
