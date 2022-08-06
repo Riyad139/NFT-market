@@ -3,6 +3,8 @@ import ContentLayout from "../layout/ContentLayout";
 
 import { AiFillHeart, AiOutlineShareAlt } from "react-icons/ai";
 import { VscFiles } from "react-icons/vsc";
+import CardLineChart from "../utils/Chart/Chart";
+//import ChartComp from "../utils/Chart/Chart";
 
 export default function NftContent(params) {
   return (
@@ -11,14 +13,14 @@ export default function NftContent(params) {
         {/* Image start here */}
         <div className="smx:w-[50%] w-full h-[400px]  smx:h-auto flex justify-center flex-shrink-0  p-8 ">
           <img
-            className="object-cover rounded-2xl flex flex-shrink-0"
+            className="object-cover  w-full rounded-2xl flex flex-shrink-0"
             src="/FloatingImage/img1.jpg"
             alt=""
           />
         </div>
         {/* image end here */}
         {/* content start here */}
-        <div className=" relative w-full pt-16 pb-3 smx:py-16 flex flex-col px-3 md:px-4 lg:px-10 smx:pr-36">
+        <div className=" relative w-full smx:w-[50%] pt-16 pb-3 smx:py-16 flex flex-col px-3 md:px-4 lg:px-10 smx:pr-36">
           <div className="absolute border p-4 rounded-full -right-[26px]">
             <AiFillHeart color="red" size={18} />
           </div>
@@ -63,7 +65,7 @@ export default function NftContent(params) {
           </div>
           {/* profile start here */}
           {/* card start here */}
-          <div className=" my-10 spx:mt-auto mt-10 flex flex-col space-y-7 p-10 rounded-2xl  bg-[#f2f1f6]">
+          <div className=" my-7 spx:mt-auto mt-10 flex flex-col space-y-5 p-7 rounded-2xl  bg-[#f2f1f6]">
             <div className="flex justify-between ">
               <div className="space-y-2">
                 <p className="text-xs text-[#7780a1]">Current price</p>
@@ -84,8 +86,11 @@ export default function NftContent(params) {
             <ButtonFill name="place a bid" />
           </div>
           {/* card end here here */}
+          <div className="mt-5 w-full">
+            <CardLineChart />
+          </div>
         </div>
-        {/* content start here */}
+        {/* content end here */}
       </div>
     </ContentLayout>
   );
