@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
+import { reactRouter } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -6,16 +8,20 @@ import { Pagination, Navigation } from "swiper";
 
 import Card from "../utils/Card/Card";
 
+const onClick = (url) => {
+  reactRouter.push(url);
+};
+
 const card = [
-  "/Carosel/Caros-1.jpeg",
-  "/Carosel/Caros-2.jpeg",
-  "/Carosel/Caros-3.jpeg",
-  "/Carosel/Caros-4.jpeg",
-  "/Carosel/Caros-5.jpeg",
-  "/Carosel/Caros-6.jpeg",
-  "/Carosel/Caros-7.jpeg",
-  "/Carosel/Caros-8.jpeg",
-  "/Carosel/Caros-9.jpeg",
+  "/Carosel/Caros1.jpeg",
+  "/Carosel/Caros2.jpeg",
+  "/Carosel/Caros3.jpeg",
+  "/Carosel/Caros4.jpeg",
+  "/Carosel/Caros5.jpeg",
+  "/Carosel/Caros6.jpeg",
+  "/Carosel/Caros7.jpeg",
+  "/Carosel/Caros8.jpeg",
+  "/Carosel/Caros9.jpeg",
 ];
 
 export default function Curoasle(params) {
@@ -60,7 +66,7 @@ export default function Curoasle(params) {
         className="mySwiper flex justify-center"
       >
         {card.map((item, i) => (
-          <SwiperSlide key={"card-" + i}>
+          <SwiperSlide key={"robin" + i}>
             <Card nft={item} />
           </SwiperSlide>
         ))}

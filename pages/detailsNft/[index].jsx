@@ -8,9 +8,17 @@ export default function index(props) {
   return (
     <Container>
       <NavBar />
-      <NftContent />
+      <NftContent pic = {props.url} />
       <PopularAuction isDet="More from this user" />
       <Footer />
     </Container>
   );
+}
+
+export async function getServerSideProps(context) {
+  const url = context.params.index.replaceAll("-", "/");
+
+  return {
+    props: { url }, // will be passed to the page component as props
+  };
 }

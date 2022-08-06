@@ -6,7 +6,7 @@ import { VscFiles } from "react-icons/vsc";
 import CardLineChart from "../utils/Chart/Chart";
 //import ChartComp from "../utils/Chart/Chart";
 
-export default function NftContent(params) {
+export default function NftContent(props) {
   return (
     <ContentLayout>
       <div className="flex smx:flex-row flex-col border rounded-2xl my-16">
@@ -14,7 +14,7 @@ export default function NftContent(params) {
         <div className="smx:w-[50%] w-full h-[400px]  smx:h-auto flex justify-center flex-shrink-0  p-8 ">
           <img
             className="object-cover  w-full rounded-2xl flex flex-shrink-0"
-            src="/FloatingImage/img1.jpg"
+            src={props.pic}
             alt=""
           />
         </div>
