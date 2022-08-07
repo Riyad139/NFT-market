@@ -20,7 +20,7 @@ export default function NavBar(props) {
       <div className=" lg:hidden">
         <div
           className={classNames(
-            "flex items-center relative z-50 ",
+            "flex items-center right-5 fixed z-[100] ",
             isOpen ? "text-[#f2f3f6]" : "text-[#060714]"
           )}
         >
@@ -30,7 +30,7 @@ export default function NavBar(props) {
 
         <div
           className={classNames(
-            "w-full h-[100vh] flex top-0 text-[#f2f3f6] duration-300 space-y-10 items-center left-0  flex-col absolute bg-[#2a27c9] z-40 justify-center",
+            "w-full h-[100vh] flex top-0 text-[#f2f3f6] duration-300 space-y-10 items-center left-0  flex-col fixed bg-[#2a27c9] z-[60] justify-center",
             isOpen ? "translate-x-0" : "-translate-x-[100%]"
           )}
         >
