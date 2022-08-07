@@ -20,14 +20,24 @@ export default function NftContent(props) {
         </div>
         {/* image end here */}
         {/* content start here */}
-        <div className=" relative w-full smx:w-[50%] pt-16 pb-3 smx:py-16 flex flex-col px-3 md:px-4 lg:px-10 smx:pr-36">
-          <div className="absolute border p-4 rounded-full -right-[26px]">
+        <div className=" relative w-full smx:w-[50%] pt-2 smx:pt-16 pb-6 smx:py-16 flex flex-col px-3 md:px-4 lg:px-10 smx:pr-36">
+          <div className="absolute border p-4 rounded-full hidden smx:table smx:-right-[26px]">
             <AiFillHeart color="red" size={18} />
           </div>
-          <div className="absolute border p-4 rounded-full top-32 -right-[26px]">
+          <div className="absolute border p-4 rounded-full hidden smx:table smx:top-32 smx:-right-[26px]">
             <VscFiles size={18} />
           </div>
-          <div className="absolute border p-4 rounded-full top-48 -right-[26px]">
+          <div className="absolute border p-4 rounded-full hidden smx:table smx:top-48 smx:-right-[26px]">
+            <AiOutlineShareAlt size={18} />
+          </div>
+
+          <div className="absolute border p-4 rounded-full -bottom-7 left-10 smx:hidden">
+            <AiFillHeart color="red" size={18} />
+          </div>
+          <div className="absolute border p-4 rounded-full -bottom-7 left-28  smx:hidden">
+            <VscFiles size={18} />
+          </div>
+          <div className="absolute border p-4 rounded-full -bottom-7 left-48 smx:hidden">
             <AiOutlineShareAlt size={18} />
           </div>
 

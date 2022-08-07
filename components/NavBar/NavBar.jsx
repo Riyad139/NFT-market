@@ -20,8 +20,8 @@ export default function NavBar(props) {
       <div className=" lg:hidden">
         <div
           className={classNames(
-            "flex items-center right-5 fixed z-[100] ",
-            isOpen ? "text-[#f2f3f6]" : "text-[#060714]"
+            "flex items-center right-5  z-[100] ",
+            isOpen ? "text-[#f2f3f6] fixed" : "text-[#060714] relative "
           )}
         >
           <Spiral toggled={isOpen} toggle={setOpen} />

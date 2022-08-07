@@ -3,7 +3,7 @@ import Card from "../utils/Card/Card";
 import Curoasle from "../Curoasle/Curoasle";
 export default function Auctions(params) {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-hidden">
       <ProductBar />
       <h4 className="flex mt-36 mb-16 text-3xl font-bold justify-center">
         Latest live auctions
