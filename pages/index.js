@@ -8,8 +8,27 @@ import ColorSection from "../components/MidSection/ColorSection";
 import NavBar from "../components/NavBar/NavBar";
 import PopularAuction from "../components/PopularAuction/PopularAuction";
 import UserProfileSection from "../components/UserProfileSection/UserProfileSection";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import LoadingNft from "../components/Loader/LoadingNft";
 
 export default function Home() {
+  const [isLoader, setLoader] = useState();
+  const router = useRouter();
+
+  useEffect(() => {
+    const RouteChange = (e) => {
+      setLoader(e);
+    };
+    const completedRouteChange = (e) => setLoader(e);
+
+    router.events.on("routeChangeStart", RouteChange);
+    router.events.on("routeChangeComplete", completedRouteChange);
+    router.events.on("routeChangeError", completedRouteChange);
+  }, [router]);
+
+  if (isLoader?.includes("detailsNft")) return <LoadingNft />;
+
   return (
     <Container>
       <NavBar />
