@@ -7,7 +7,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import NftContent from "../../components/NftContent/NftContent";
 import PopularAuction from "../../components/PopularAuction/PopularAuction";
 
-export default function index(props) {
+export default function DetailsIndex(props) {
   const [isLoader, setLoader] = useState(true);
   const router = useRouter();
 
